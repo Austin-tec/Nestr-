@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="logo.png" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <title>NESTR - Find Housing in Nigeria</title>
+  <link rel="stylesheet" href="css/style.css?v=5">
+  <link rel="stylesheet" href="css/responsive.css?v=5">
+</head>
+
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">
+        <div class="logo"><img src="logo.png" alt="logo" width="40" height="40" decoding="async" fetchpriority="high">
+        </div>
+        <div class="brand-text">
+          <h1>NESTR</h1>
+          <p>Find Your Dream Home</p>
+        </div>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#listings" class="nav-link">Browse</a>
+        <div class="nav-auth" id="navAuth">
+          <a href="#login" class="nav-link">Login</a>
+          <a href="#signup" class="btn btn-primary" onclick="event.preventDefault(); Router.navigate('signup');">Sign
+            Up</a>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">☰</div>
+    </nav>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content">
+    <!-- Pages will be loaded here dynamically -->
+    <div class="loading" id="loading">Loading Nestr...</div>
+  </main>
+
+  <!-- Global WhatsApp CTA -->
+  <a href="https://wa.me/2348000000000?text=Hi%20Nestr,%20I'm%20looking%20for%20an%20apartment" class="global-wa-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i> Chat with Bot
+  </a>
+
+  <!-- Footer -->
+  <footer class="nestr-footer" style="background: var(--darker); border-top: 1px solid rgba(255,255,255,0.05); padding: 60px 20px; text-align: center;">
+    <div class="footer-content" style="max-width: 800px; margin: 0 auto;">
+      <h2 style="font-family: 'Space Grotesk'; font-size: 2.5rem; margin-bottom: 0.5rem; background: linear-gradient(90deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block;">Nestr</h2>
+      <p style="color: #a1a1aa; font-size: 1.1rem; margin-bottom: 2rem;">Nigeria's most energetic housing database.</p>
+
+      <div class="footer-socials" style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2.5rem;">
+        <a href="https://wa.me/2348000000000" target="_blank" style="width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(37,211,102,0.1); color: var(--primary); font-size: 1.5rem; transition: 0.3s; box-shadow: 0 4px 15px rgba(37,211,102,0.2);"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" style="width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.05); color: #fff; font-size: 1.2rem; transition: 0.3s;"><i class="fab fa-instagram"></i></a>
+        <a href="#" style="width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.05); color: #fff; font-size: 1.2rem; transition: 0.3s;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.05); color: #fff; font-size: 1.2rem; transition: 0.3s;"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <div class="footer-contact" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem; color: #a1a1aa; font-weight: 500;">
+        <a href="mailto:nestrhomes@gmail.com" style="display: flex; align-items: center; gap: 0.5rem; transition: 0.3s;"><i class="fa-solid fa-message" style="color: var(--primary);"></i> info@nestr.com</a>
+        <a href="tel:+2348000000000" style="display: flex; align-items: center; gap: 0.5rem; transition: 0.3s;"><i class="fa-solid fa-phone" style="color: var(--secondary);"></i> +234 80 0000 0000</a>
+      </div>
+
+      <p class="copy" style="color: rgba(255,255,255,0.2); font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 2rem;">&copy; 2024 Nestr. Connecting Nigerians securely.</p>
+    </div>
+  </footer>
+
+  <!-- icons library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+
+
+
+
+
+
+
+  <!-- JavaScript Files -->
+  <script src="js/config.js?v=6"></script>
+  <script src="js/utils.js?v=6"></script>
+  <script src="js/auth.js?v=6"></script>
+  <script src="js/properties.js?v=6"></script>
+  <script src="js/router.js?v=6"></script>
+  <script src="js/app.js?v=6"></script>
+</body>
+
+</html>
